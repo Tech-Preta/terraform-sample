@@ -41,6 +41,12 @@ Este repositório é um template para projetos Terraform, com foco em segurança
 - **Função:** Bloqueia PRs que introduzem dependências vulneráveis conhecidas, usando o GitHub Dependency Review Action.
 - **Segurança:** Garante que novas dependências estejam livres de vulnerabilidades conhecidas.
 
+### 7. CodeQL Analysis (opcional)
+- **Arquivo:** (não incluído por padrão)
+- **Função:** Executa análise estática de segurança aprofundada com CodeQL para identificar vulnerabilidades no código.
+- **Segurança:** Detecta padrões de código problemáticos que podem levar a vulnerabilidades, com base em queries mantidas pela comunidade e pelo GitHub.
+- **Observação:** O uso do CodeQL é recomendado e está documentado em [SECURITY.md](SECURITY.md), mas o workflow não está incluído por padrão neste template. Para habilitar, utilize a opção "Configure CodeQL" na aba "Security" do GitHub ou adicione manualmente o workflow sugerido pela plataforma.
+
 ## Outras Práticas de Segurança
 
 - **Dependabot:** Atualizações automáticas de dependências.
