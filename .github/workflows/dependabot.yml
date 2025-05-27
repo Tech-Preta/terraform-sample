@@ -4,3 +4,5 @@ updates:
   directory: "/" # Localização do workflow YAML
   schedule:
     interval: "daily"
+permissions:
+  contents: read
